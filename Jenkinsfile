@@ -1,4 +1,3 @@
-
 pipeline {
     agent any
 
@@ -6,7 +5,7 @@ pipeline {
 
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/Karthickb12/jenkins.git'
+                git branch: 'main', url: 'https://github.com/Karthickb12/jenkins.git'
             }
         }
 
